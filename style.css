@@ -21211,3 +21211,14 @@ body.bg-dark.bg-white .under-construction-page .under-construction-content .sear
 .swiper-pagination-bullet {
   background: #fff !important;
 }
+@media screen and (max-width: 768px) {
+  .desktop-screen{
+    display: none;
+  }
+  .text-mob{
+    padding-top: 20rem;
+  }
+  .mob-tab-screen{
+    display: block !important;
+  }
+  }

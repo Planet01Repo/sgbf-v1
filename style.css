@@ -21486,7 +21486,7 @@ height: 100vh;
   background-size: cover;
   /* background-position: center; */
   background-repeat: no-repeat;
-height: 1800px;
+height: 850px;
 }
 .about_text_inner{
   position: absolute;
@@ -21494,7 +21494,7 @@ height: 1800px;
 }
 .about_text_inner2{
   position: absolute;
-  top: 10%;
+  top: 20%;
 }
 .about-img2 {
   position: absolute;
@@ -21540,3 +21540,35 @@ height: 1800px;
     bottom: 0;
     left: 0;
 } */
+
+/* Cards */
+.cards-wrapper{
+  margin: 0 10rem;
+}
+
+ section.landing-cards{
+  position: relative;
+  bottom: 10rem;
+}
+
+.single-landing-card{
+  background: white;
+  box-shadow: 0 35px 120px #0000001a;
+  height: 340px;
+  transition: .3s all;
+  cursor: default;
+}
+
+
+p.landing-card-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: black;
+}
+
+p.landing-card-count{
+  font-size: 60px;
+  font-weight: 600;
+  color: black;
+} 

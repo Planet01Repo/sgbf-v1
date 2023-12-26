@@ -20270,6 +20270,9 @@ body.bg-white .theme_slider.bg-black {
 body.bg-dark.bg-white a, body.bg-white a {
   color: #1b1b1b;
 }
+body.bg-dark.bg-white .label-text a , body.bg-dark.bg-white .about_text h2, body.bg-dark.bg-white .about_text p{
+  color: #fff;
+}
 
 body.bg-dark.bg-white .btn.gray,
 body.bg-dark.bg-white .btn.black,
@@ -21553,7 +21556,7 @@ height: 850px;
   position: absolute;
   bottom: 0;
   top: 24%;
-  z-index: 999;
+  z-index: 8;
   right: 0;
   left: 0;
 }
@@ -21595,7 +21598,6 @@ color: white;
 
 
   .contact_us{
-    background-image: url(images/become_member/member_ship.jpg) !important;
     position: relative;
     z-index: 100;
     padding: 200px;
@@ -21603,4 +21605,10 @@ color: white;
     background-repeat: no-repeat;
     background-size: cover;
 }
-  
+.about_text h2, .about_text p{
+  color: #fff !important;
+}
+.contact_us h2,.contact_us p{
+  color: #fff !important;
+
+}

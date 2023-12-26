@@ -11047,7 +11047,7 @@ img {
 
 .section, section {
   position: relative;
-  padding: 100px 0px;
+  padding: 10px 0px;
   z-index: 1;
 }
 
@@ -12292,7 +12292,7 @@ body.left_menu .mr_menu {
 }
 .carousel-section{
     padding: 0px 0px;
-    margin-bottom: -6px;
+    margin-bottom: -33px;
 }
 .theme_slider .swiper-slide .slider {
   background-repeat: repeat;
@@ -19531,7 +19531,7 @@ body.left_menu .mr_menu {
 
 .highlight_banner {
   padding-top: 140px;
-  padding-bottom: 175px;
+  padding-bottom: 140px;
 }
 
 .pd-top-lg {
@@ -21541,14 +21541,21 @@ height: 850px;
     left: 0;
 } */
 
+
+
 /* Cards */
 .cards-wrapper{
   margin: 0 10rem;
 }
 
  section.landing-cards{
-  position: relative;
   bottom: 10rem;
+  position: absolute;
+  bottom: 0;
+  top: 24%;
+  z-index: 999;
+  right: 0;
+  left: 0;
 }
 
 .single-landing-card{
@@ -21564,7 +21571,7 @@ p.landing-card-title{
     font-size: 20px;
     font-weight: 600;
     margin-top: 1rem;
-    color: black;
+    color: var(--mrittik-black);
 }
 
 p.landing-card-count{
@@ -21572,3 +21579,28 @@ p.landing-card-count{
   font-weight: 600;
   color: black;
 } 
+.single-landing-card:hover{
+  background-color: green;
+}
+.single-landing-card:hover .landing-card-img {
+  filter: brightness(100);
+}
+.single-landing-card:hover .landing-card-title{
+color: white;
+}
+.single-landing-card:hover .landing-card-count{
+  color: white;
+  }
+
+
+
+  .contact_us{
+    background-image: url(images/become_member/member_pics.jpg) !important;
+    position: relative;
+    z-index: 100;
+    padding: 200px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  

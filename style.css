@@ -21690,6 +21690,17 @@ color: white;
   font-weight: 600;
 
 }
+@media (max-width: 1560px) {
+  .carousel-section{
+    margin-top: -26px !important;
+  }
+}
+@media (max-width: 1399px) {
+  .header .mainnav ul.main_menu > li:not(:last-child) > a {
+    padding-right: 1.5rem !important;
+  }
+   
+  }
 
 @media (max-width: 1366px) {
   .single-landing-card{
@@ -21707,4 +21718,6 @@ section.landing-cards {
 .about_text{
   margin-top: 14% !important;
 }
+
+
 }

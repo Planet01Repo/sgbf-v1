@@ -21580,14 +21580,14 @@ height: 850px;
 
 p.landing-card-title{
     font-size: 20px;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-top: 1rem;
     color: var(--mrittik-black);
 }
 
 
 p.landing-card-count{
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 600;
   color: black;
 } 
@@ -21693,9 +21693,7 @@ color: white;
 .home_contact{
   position: relative;
 }
-p.landing-card-count{
-  font-size: 42px;
-}
+
 .overlay-image {
   z-index: -1;
   position: absolute;
@@ -21726,10 +21724,10 @@ p.landing-card-count{
 }
 
 .landing-card-count:after {
-      content: "";
+    content: "";
     position: absolute;
-    bottom: -41px;
-    left: 8px;
+    bottom: -35px;
+    left: 2px;
     width: 47%;
     height: 4px;
     background-color: #fff;
@@ -21769,12 +21767,24 @@ p.landing-card-count{
       top: -117% !important;
       left: 0% !important;
   }
+  p.landing-card-title{
+    font-size: 16px !important;
+}
+p.landing-card-count {
+  font-size: 38px !important;
+}
 }
 
 @media (max-width: 1399px) {
   .header .mainnav ul.main_menu > li:not(:last-child) > a {
     padding-right: 1.5rem !important;
   }
+  p.landing-card-title{
+    font-size: 15px !important;
+}
+p.landing-card-count {
+  font-size: 36px !important;
+}
   }
 
 @media (max-width: 1366px) {
@@ -21792,5 +21802,11 @@ section.landing-cards {
 }
 .about_text{
   margin-top: 14% !important;
+}
+p.landing-card-title{
+  font-size: 14px !important;
+}
+p.landing-card-count {
+  font-size: 34px !important;
 }
 }

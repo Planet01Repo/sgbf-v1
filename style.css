@@ -21750,7 +21750,10 @@ color: white;
   margin-left: 82px;
 }  */
 
-
+.light_logo_icon img {
+  width: 50px;
+  margin-bottom: 40px;
+}
   
 @media (max-width: 1699px) {
   .overlay-image {
@@ -21794,8 +21797,9 @@ p.landing-card-count {
   p.landing-card-count {
     font-size: 50px !important;
 }
-.light_logo img{
-  width: 100px;
+.light_logo_icon img {
+  width: 50px !important;
+  margin-bottom: 40px !important;
 }
 section.landing-cards {
   top: 23%;

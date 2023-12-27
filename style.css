@@ -34,6 +34,8 @@
     4-17. Responsive
     4-18. Light Color File
 -----------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cairo:wght@500&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 @import url("../fonts/bootstrap-icons/font/bootstrap-icons.css");
 @import url("../../plugins/menu/ma5-menu.css");
@@ -197,7 +199,8 @@
   --mrittik-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --mrittik-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --mrittik-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --mrittik-body-font-family: Montserrat, sans-serif;
+  /* --mrittik-body-font-family: Montserrat, sans-serif; */
+  --mrittik-body-font-family: 'Cairo' , sans-serif;
   --mrittik-body-font-size: 1rem;
   --mrittik-body-font-weight: 400;
   --mrittik-body-line-height: 1.5;
@@ -3731,9 +3734,11 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: var(--mrittik-nav-link-padding-y) var(--mrittik-nav-link-padding-x);
-  font-size: var(--mrittik-nav-link-font-size);
+  /* font-size: var(--mrittik-nav-link-font-size); */
+  font-size: 16px !important;
   font-weight: var(--mrittik-nav-link-font-weight);
-  color: var(--mrittik-nav-link-color);
+  /* color: var(--mrittik-nav-link-color); */
+  color: white;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -5686,7 +5691,7 @@ fieldset:disabled .btn {
   display: block;
   padding: var(--mrittik-tooltip-arrow-height);
   margin: var(--mrittik-tooltip-margin);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cairo", sans-serif !important;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5803,7 +5808,7 @@ fieldset:disabled .btn {
   z-index: var(--mrittik-popover-zindex);
   display: block;
   max-width: var(--mrittik-popover-max-width);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10868,7 +10873,7 @@ html {
 
 body {
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #000000;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -10931,7 +10936,7 @@ body {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cairo", sans-serif;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -11251,7 +11256,7 @@ label {
   position: relative;
   width: auto;
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 0.75rem;
   line-height: 1.5rem;
   font-weight: 700;
@@ -11350,7 +11355,7 @@ label {
   position: relative;
   width: auto;
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 0.75rem;
   line-height: 1.5rem;
   font-weight: 700;
@@ -11564,13 +11569,14 @@ label {
 }
 
 .header .header_inner {
-  padding: 1.875rem 0rem;
+  /* padding: 1.875rem 0rem; */
   transition: all 0.5s ease-in-out;
 }
 
 .header.sticky {
   transform: perspective(300px) rotateX(0deg);
   transform-origin: top;
+  background-color: #0d2519 !important;
 }
 
 .header.sticky .header_inner {
@@ -11592,11 +11598,12 @@ label {
 
 .header .logo a {
   display: inline-block;
+  margin-
 }
 
 .header .logo a img {
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -11629,14 +11636,14 @@ label {
   list-style: none;
   display: inline-block;
   position: relative;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  /* font-family: "Montserrat", sans-serif; */
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.25rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-decoration: none;
   text-align: center;
-  color: #ffffff;
+  color: #ffffff8c;
   padding: 1.875rem 0rem;
   letter-spacing: 1.2px;
 }
@@ -11652,7 +11659,8 @@ label {
 }
 
 .header .mainnav ul.main_menu li.current > a, .header .mainnav ul.main_menu li.active > a, .header .mainnav ul.main_menu li:hover > a {
-  color: #00882A;
+  color: #ffff;
+  cursor: pointer;
 }
 
 .header .mainnav ul.main_menu li ul {
@@ -11712,12 +11720,12 @@ label {
 }
 
 .header .mainnav ul.main_menu > li:not(:last-child) > a {
-  padding-right: calc(1.5625rem + 3.21429vw);
+  /* padding-right: calc(1.5625rem + 3.21429vw); */
 }
 
 @media (min-width: 1400px) {
   .header .mainnav ul.main_menu > li:not(:last-child) > a {
-    padding-right: 4.375rem;
+    padding-right: 2.5rem;
   }
 }
 
@@ -16014,7 +16022,7 @@ body.left_menu .mr_menu {
 }
 
 .pagination li a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 0.9375rem;
   color: #ffffff;
   text-align: center;
@@ -16965,7 +16973,7 @@ body.left_menu .mr_menu {
   position: sticky;
   position: -webkit-sticky;
   top: 30px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cairo", sans-serif;
   /*-- Select2 Customize --*/
   /*-- Search --*/
   /*-- Category Dropdown --*/
@@ -17487,7 +17495,7 @@ body.left_menu .mr_menu {
   width: 50px;
   line-height: 24px;
   z-index: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;
@@ -17705,7 +17713,7 @@ body.left_menu .mr_menu {
   width: 50px;
   line-height: 24px;
   z-index: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;
@@ -17941,7 +17949,7 @@ body.left_menu .mr_menu {
 }
 
 .product_right .product_view_bottom .product_quantity .pproduct_quantity_label {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -18273,7 +18281,7 @@ body.left_menu .mr_menu {
 }
 
 .review_sec ul.review_area .reviewer_div .review_block .reply a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 17px;
   font-weight: 400;
   color: #a6a182;
@@ -18290,7 +18298,7 @@ body.left_menu .mr_menu {
 }
 
 .review_sec .reviews-pagination a, .review_sec .reviews-pagination span {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
@@ -21555,7 +21563,7 @@ height: 850px;
   bottom: 10rem;
   position: absolute;
   bottom: 0;
-  top: 24%;
+  top: 22%;
   z-index: 8;
   right: 0;
   left: 0;
@@ -21611,4 +21619,92 @@ color: white;
 .contact_us h2,.contact_us p{
   color: #fff !important;
 
+}
+/* .search-input-form{
+  border-bottom: 1px solid #ffff;
+}
+ .search-input-form input[type="search"] {
+  background-color: transparent !important;
+  color: #fff !important;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.search-input-form input::placeholder {
+  color: #ffff;
+  opacity: 1;
+} */
+.search-input::placeholder {
+  color: #ffff;
+  opacity: 1;
+} 
+.search-container {
+  position: relative !important;; 
+  width: 300px !important;;
+}
+.search-input {
+  width: 100% !important;;
+  padding: 5px !important;
+  height: 30px !important;
+  border: none !important;;
+  background: transparent !important;
+  border-bottom: 1px solid white !important;
+  outline: none !important;;
+  color: #fff !important;
+}
+.search-icon.fa-search {
+  color: #fff!important;
+}
+.search-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  bottom: 0;
+  padding: 3px 5px 0 0;
+  cursor: pointer;
+}
+.lang-dropdown .dropdown-menu.show {
+  border-radius: 0;
+  border: none;
+  padding: 1rem;
+  background: #00882A;
+}
+.white-btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 10px 1.5rem;
+  background: #fff !important;
+}
+.white-btn-text {
+  color: #00882A !important;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.white-btn-text a{
+  color: #00882A !important; 
+  font-weight: 600;
+}
+.white-btn i {
+  color: #00882A !important;
+  font-weight: 600;
+
+}
+
+@media (max-width: 1366px) {
+  .single-landing-card{
+    height: 300px !important;
+  }
+  p.landing-card-count {
+    font-size: 50px !important;
+}
+.light_logo img{
+  width: 100px;
+}
+section.landing-cards {
+  top: 23%;
+}
+.about_text{
+  margin-top: 14% !important;
+}
 }

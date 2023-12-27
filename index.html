@@ -38,6 +38,7 @@
       rel="apple-touch-icon"
       sizes="144x144"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Page Title -->
     <title>SGBF - Saudi Green Building Forum</title>
@@ -51,7 +52,7 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
@@ -113,7 +114,7 @@
 
       <!-- Header -->
       <header class="header bg-dark sticky">
-        <div class="container">
+        <div class="container-fluid">
           <div
             class="header_inner d-flex align-items-center justify-content-between"
           >
@@ -129,21 +130,30 @@
             <div class="mainnav d-none d-lg-block">
               <ul class="main_menu">
                 <li class="menu-item menu-item-has-children active">
-                  <a href="./Mrittik - Modern Architecture Theme.html">Home</a>
+                  <a>Members</a>
                 </li>
-                <li class="menu-item menu-item-has-children"><a>About</a></li>
-                <li class="menu-item menu-item-has-children">
-                  <a>Membership</a>
+                <li class="menu-item menu-item-has-children"><a>Education</a></li>
+                <li class="menu-item menu-item-has-children"><a>Marketplace</a></li>
+                <li class="menu-item">
+                  <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search..."><i class="search-icon fa fa-search"></i>
+                  </div>
                 </li>
-                <li class="menu-item menu-item-has-children"><a>Events</a></li>
-                <li class="menu-item"><a>Contacts</a></li>
+                
               </ul>
             </div>
 
             <div class="header_right_part d-flex align-items-center">
-              <button>
-                <img src="./login.png" alt="" width="25px" /> Login
-              </button>
+              <form class="d-flex my-2 my-lg-0 align-items-center">
+                <div class="dropdown open lang-dropdown me-3">
+                  <a class="btn-secondary dropdown-toggle" type="button" id="triggerLang" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> English </a>
+                  <div class="dropdown-menu" aria-labelledby="triggerLang"><a class="dropdown-item" href="#">English</a><a class="dropdown-item" href="#">Arabic</a></div>
+                </div>
+                <button class="white-btn"><i class="fa fa-user me-2" aria-hidden="true"></i>
+                  <span class="white-btn-text">
+                  <a class="text-decoration-none primary-text bold" href="/signIn">Get Started</a></span>
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -663,7 +673,7 @@
               <div class="container about_text_inner2">
                 <div
                   class="about_text"
-                  style="width: 800px; margin-right: auto; margin-left: auto; margin-top:10%"
+                  style="width: 800px; margin-right: auto; margin-left: auto; margin-top:13%"
                 >
                   <h2
                     class=""
@@ -894,7 +904,7 @@
     <script src="./funfacts.js"></script>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
